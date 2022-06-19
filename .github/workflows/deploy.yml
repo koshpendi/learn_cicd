@@ -27,5 +27,5 @@ jobs:
       - name: build and deploy
         run: |
           sudo docker build -t $GITHUB_REPOSITORY .
-          sudo docker rm $(sudo docker stop $(sudo docker ps -a -q --filter ancestor=$GITHUB_REPOSITORY --format="{{.ID}}"))
+          sudo docker stop $(sudo docker ps -a -q --filter ancestor=$GITHUB_REPOSITORY --format="{{.ID}}")
           sudo docker run -d -p 80:80 $GITHUB_REPOSITORY
