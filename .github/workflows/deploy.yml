@@ -25,7 +25,6 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: deploy
-        run: sudo docker build -t $GITHUB_REPOSITORY .
-        # run: |
-        #   docker build -t $GITHUB_REPOSITORY .
-        #   docker run -d -p 80:80 $GITHUB_REPOSITORY
+        run: |
+          docker build -t $GITHUB_REPOSITORY .
+          docker run -d -p 80:80 $GITHUB_REPOSITORY
