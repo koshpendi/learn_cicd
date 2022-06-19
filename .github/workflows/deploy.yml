@@ -25,6 +25,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: build and deploy
-        run: |
-          sudo docker build -t nginx:latest .
-          sudo docker run -d --restart always -p 80:80 nginx:latest
+        run: cp index.html /var/www/html
