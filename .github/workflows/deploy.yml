@@ -25,4 +25,4 @@ jobs:
 
       # Runs a set of commands using the runners shell
       - name: build and deploy
-        run: sudo cp index.html /var/www/html
+        run: sudo cp * /var/www/html
