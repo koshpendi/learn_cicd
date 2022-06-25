@@ -17,42 +17,53 @@
       integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
       crossorigin="anonymous"
     />
+    <link rel="stylesheet" href="index.css" />
   </head>
-  <body>
-    <style>
-      html,
-      body {
-        margin: 0;
-        font-family: "Ubuntu", sans-serif;
-        height: 100%;
-      }
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      p,
-      span {
-        color: #4f4e4e;
-      }
-    </style>
-    <header></header>
-    <main
-      class="h-100 d-flex flex-column justify-content-center align-items-center"
-    >
-      <section>
-        <h1>Разрабатываем веб приложения</h1>
-        <div class="d-flex align-items-center justify-content-between">
-          <h5>React</h5>
-          <h5>Spring Boot</h5>
-          <h5>PostgreSQL</h5>
-          <h5>AWS</h5>
-        </div>
-        <div class="mt-5">
+  <body class="d-flex flex-column">
+    <header>
+      <nav class="navbar navbar-expand-lg bg-light">
+        <div class="container">
+          <div class="d-flex align-items-center">
+            <a class="navbar-brand" href="#home">MainDev</a>
+            <a class="nav-link" href="#projects">Проекты</a>
+          </div>
           <a class="text-success" href="mailto:anuarkhanov@gmail.com"
             >anuarkhanov@gmail.com</a
           >
         </div>
+      </nav>
+    </header>
+    <main class="h-100">
+      <section
+        id="home"
+        class="h-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <div>
+          <h1>Разрабатываем веб приложения</h1>
+        </div>
+      </section>
+
+      <section
+        id="projects"
+        class="h-100 d-flex flex-column justify-content-center align-items-center"
+      >
+        <h1>Проекты</h1>
+        <ul>
+          <li>
+            <a href="http://agis.geocom.kz/rubrics">Astana GIS</a>
+          </li>
+          <li>
+            <a href="http://aisgzk.kz/">AISGZK</a>
+          </li>
+          <li>
+            <a href="https://igtipc.org/ru/digital-platform"
+              >International Green Technologies & Investments Center</a
+            >
+          </li>
+          <li>
+            <a href="https://surveys.nces.ed.gov/ipeds/">IPEDS</a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer></footer>
