@@ -15,8 +15,20 @@ span {
 }
 
 header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: 1;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
+
+#projects a {
+  text-decoration: none;
+}
+#projects li {
+  width: 300px;
+}
+#projects li:hover {
+  background: #ccc;
+  cursor: pointer;
+}
+
