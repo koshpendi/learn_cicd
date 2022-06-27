@@ -9,9 +9,11 @@ h2,
 h3,
 h4,
 h5,
-p,
 span {
-  color: #4f4e4e;
+  color: #3A3845;
+}
+p {
+  color: #73777B
 }
 
 header {
@@ -33,4 +35,14 @@ header {
 .mtb {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+.mtb-1 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.mtb-2 {
+  margin-top: 20px;
+  margin-bottom: 20px;
 }
