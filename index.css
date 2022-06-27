@@ -16,13 +16,6 @@ p {
   color: #73777B
 }
 
-header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 1;
-}
-
 #projects a {
   text-decoration: none;
   height: 150px;
