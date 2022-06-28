@@ -2,7 +2,6 @@ html,
 body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
-  height: 100%;
 }
 h1,
 h2,
@@ -15,7 +14,6 @@ span {
 p {
   color: #73777B
 }
-
 #projects a {
   text-decoration: none;
   height: 150px;
@@ -38,4 +36,10 @@ p {
 .mtb-2 {
   margin-top: 20px;
   margin-bottom: 20px;
+}
+
+.center {
+  margin: auto;
+  position: absolute;
+  top: 0; left: 0; bottom: 0; right: 0;
 }
