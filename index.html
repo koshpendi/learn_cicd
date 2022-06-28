@@ -28,7 +28,7 @@
     <meta name="yandex-verification" content="67ab0afbd62c0e6d" />
     <meta
       name="keywords"
-      content="HTML, CSS, JavaScript, TypeScript, Java, Postgresql, разработка, веб, приложение, web, development, react, nodejs, spring boot, frontend, backend, SPA, разработка в казахстане, качественная разработка"
+      content="команда разработчиков по, разработка crm, crm, команда разработчиков, консультации для стартапов, стартап, startup, HTML, CSS, JavaScript, TypeScript, Java, Postgresql, разработка, веб, приложение, web, development, react, nodejs, spring boot, frontend, backend, SPA, разработка в казахстане, качественная разработка"
     />
     <meta name="author" content="Kuanysh Anuarkhanov" />
     <link rel="canonical" href="https://www.maindev.kz" />
@@ -41,21 +41,23 @@
       href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="./css/bootstrap.min.css" />
     <link rel="stylesheet" href="index.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
   </head>
-  <body>
+  <body class="bg-light text-dark">
     <nav class="navbar navbar-expand-lg bg-light">
       <div class="container">
         <div class="d-flex align-items-center gap-2">
-          <a class="navbar-brand" href="#home">MD</a>
+          <a class="navbar-brand text-dark" href="#home">Maindev</a>
         </div>
-        <a
-          target="_blank"
-          class="text-success"
-          href="mailto:anuarkhanov@gmail.com"
+        <!-- <a target="_blank" class="text-dark" href="mailto:anuarkhanov@gmail.com"
           >anuarkhanov@gmail.com</a
-        >
+        > -->
+
+        <div class="toggle">
+          <input type="checkbox" id="toggle" />
+          <label for="toggle"> </label>
+        </div>
       </div>
     </nav>
     <main>
@@ -63,7 +65,10 @@
         <div class="container">
           <div class="row justify-content-center align-items-center">
             <div class="col-12">
-              <h1>Разрабатываем web приложения</h1>
+              <h1>
+                Создаем интерфейсы, приложения и
+                цифровые сервисы для государства и бизнеса
+              </h1>
               <p>Совместная разработка ТЗ</p>
             </div>
           </div>
@@ -136,52 +141,67 @@
           <div class="row">
             <div class="mtb col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
               <a
-                class="card p-3"
+                class="card bg-light p-3"
                 target="_blank"
                 href="http://agis.geocom.kz/rubrics"
               >
                 <h5 class="m-0">Astana GIS</h5>
-                <i class="mt-1"> Гис портал для г. Нур-Султан </i>
-              </a>
-            </div>
-            <div class="mtb col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
-              <a class="card p-3" target="_blank" href="http://aisgzk.kz/">
-                <h5 class="m-0">AISGZK</h5>
-                <i class="mt-1"
-                  >Автоматизированная информационная система государственного
-                  земельного кадастра РК
-                </i>
+                <p class="mt-1">Гис портал для г. Нур-Султан</p>
               </a>
             </div>
             <div class="mtb col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
               <a
-                class="card p-3"
+                class="card bg-light p-3"
+                target="_blank"
+                href="http://aisgzk.kz/"
+              >
+                <h5 class="m-0">AISGZK</h5>
+                <p class="mt-1">
+                  Автоматизированная информационная система государственного
+                  земельного кадастра РК
+                </p>
+              </a>
+            </div>
+            <div class="mtb col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
+              <a
+                class="card bg-light p-3"
                 target="_blank"
                 href="https://igtipc.org/ru/digital-platform"
               >
                 <h5 class="m-0">
                   International Green Technologies & Investments Center
                 </h5>
-                <i class="mt-1"></i>
+                <p class="mt-1"></p>
               </a>
             </div>
             <div class="mtb col-xs-12 col-sm-12 col-md-4 col-lg-4 col-xl-3">
               <a
-                class="card p-3"
+                class="card bg-light p-3"
                 target="_blank"
                 href="https://surveys.nces.ed.gov/ipeds/"
               >
                 <h5 class="m-0">IPEDS</h5>
-                <i class="mt-1"
-                  >Система для предоставления данных со всех образовательных
-                  учреждений США</i
-                >
+                <p class="mt-1">
+                  Система для предоставления данных со всех образовательных
+                  учреждений США
+                </p>
               </a>
             </div>
           </div>
         </div>
       </section>
     </main>
-    <footer></footer>
+    <footer>
+      <div class="container text-end">
+        <a target="_blank" href="mailto:anuarkhanov@gmail.com"
+          >anuarkhanov@gmail.com</a
+        >
+        <div class="mt-1">
+          <a href="tel:+77474442609">+7 747 444 26 09</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

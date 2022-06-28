@@ -3,16 +3,14 @@ body {
   margin: 0;
   font-family: "Ubuntu", sans-serif;
 }
-h1,
-h2,
-h3,
-h4,
-h5,
-span {
-  color: #3a3845;
-}
 p {
   color: #73777b;
+}
+footer {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  height: 100px;
 }
 
 #home {
@@ -21,11 +19,12 @@ p {
 }
 
 #projects a {
+  /* background-color: #141414; */
   text-decoration: none;
   height: 150px;
 }
 #projects a:hover {
-  background: #f6f6f6;
+  /* background: #272727; */
   cursor: pointer;
 }
 .mtb {
@@ -41,11 +40,39 @@ p {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.center {
-  margin: auto;
+
+.toggle input[type="checkbox"] {
+  display: none;
+}
+
+.toggle label {
+  background-color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: all ease-in-out 0.2s;
+  width: 47px;
+  height: 27px;
+}
+.toggle label::after {
+  background-color: #555;
+  border-radius: 50%;
+  content: " ";
+  cursor: pointer;
+  display: inline-block;
   position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
+  left: 2px;
+  top: 2px;
+  transition: all ease-in-out 0.2s;
+  width: 23px;
+  height: 23px;
+}
+.toggle input[type="checkbox"]:checked ~ label {
+  background-color: #fff;
+}
+
+.toggle input[type="checkbox"]:checked ~ label::after {
+  background-color: #555;
+  transform: translateX(20px);
 }
